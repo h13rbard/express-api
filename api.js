@@ -5,7 +5,7 @@ const app = express()
 const port = 3000
 
 app.use(express.json())
-mongoose.connect('mongodb+srv://gmunoz:QkBRiJyFdjM9M5qw@cluster76.qv6fa55.mongodb.net/?appName=Cluster76')
+mongoose.connect('mongodb')
 
 app.get('/users',user.list) 
 app.post('/users', user.create) 
